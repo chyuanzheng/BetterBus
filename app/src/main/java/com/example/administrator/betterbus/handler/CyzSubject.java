@@ -10,18 +10,16 @@ import java.util.List;
  * Created by Administrator on 2016/10/23.
  */
 
-public  class CyzSubject implements BetterSubject {
-   // private String  busId;
+public class CyzSubject implements BetterSubject {
+    // private String  busId;
     private Handler handler;
     private List<ICyzBus> busList = new ArrayList<>();
 
     public CyzSubject() {
-        handler = new Handler(){
+        handler = new Handler() {
             public void handleMessage(Message msg) {
-                if (busList == null)
-                    return ;
-                synchronized (this){
-                    for (ICyzBus bus:busList){
+                synchronized (this) {
+                    for (ICyzBus bus : busList) {
                         bus.handleMessage(msg);
                     }
                 }
@@ -32,7 +30,7 @@ public  class CyzSubject implements BetterSubject {
     @Override
     public void subscibe(ICyzBus bus) {
 
-        synchronized (this){
+        synchronized (this) {
             if (busList.contains(bus))
                 return;
             busList.add(bus);
@@ -46,11 +44,9 @@ public  class CyzSubject implements BetterSubject {
     }
 
 
-
     public void clear() {
-        synchronized (this){
-            if (busList!=null)
-                busList.clear();
+        synchronized (this) {
+            busList.clear();
         }
     }
 }

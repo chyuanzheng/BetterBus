@@ -16,21 +16,11 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
 
-    <Button
-        android:id="@+id/handler"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:text="handler"/>
-
 
     <Button
         android:id="@+id/betterBusPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
         android:text="betterBusPost"/>
 
 </LinearLayout>
