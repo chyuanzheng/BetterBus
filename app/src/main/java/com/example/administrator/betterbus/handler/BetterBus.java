@@ -17,7 +17,7 @@ public class BetterBus  {
         mapHolder.put(busId,result);
         return result;
     }
-    static  public BetterSubject getIMessage(String busId){
+    static  public BetterSubject getSubject(String busId){
         return mapHolder.get(busId);
     }
     static public void unRegister(String busId){
