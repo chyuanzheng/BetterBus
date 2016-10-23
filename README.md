@@ -1,7 +1,7 @@
 # BetterBus
 用Handler封装的Bus，方便使用
 ##第一步 
-  private BetterSubject subject;//定义
+  private BetterSubject subject;//定义\n
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
