@@ -2,7 +2,7 @@
 用Handler封装的Bus，方便使用
 ##第一步 
   private BetterSubject subject;
-    @Override
+   
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
